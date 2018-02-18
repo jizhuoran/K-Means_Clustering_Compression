@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 set -e
 
-TOOLS=./build/tools
+TOOLS=./build4/tools
 
 $TOOLS/caffe train \
-    --solver=examples/cifar10/cifar10_full_solver.prototxt $@
+    --solver=examples/cifar10/cifar10_4_full_solver.prototxt $@
 
 # reduce learning rate by factor of 10
 $TOOLS/caffe train \
